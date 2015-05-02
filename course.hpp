@@ -1,18 +1,30 @@
+#ifndef COURSE_H
+#define COURSE_H
+
 #include <string>
-#include "course_day.hpp"
-#include "course_type.hpp"
+
 
 
 class course
-{
-public:
-	course();
-	~course();
-	std::string title;
-	courseDay day; 
-	courseType type; 
+{	
+	public:
+		enum CourseDay{MWF, MW, TuTH};
+		 enum CourseType {Lecture, Discussion, Lab};
+		std::string title;
+		CourseDay day; 
+		CourseType type;
+
+		course(std::string t, CourseDay d, CourseType ty){
+			title = t; 
+			day = d; 
+			type = ty; 
+		};
+		~course();
+ 
 
 	void printCourse();
 	// courseType setCourseType(courseType ty);
 	// courseDay setCourseDay(courseDay d); 
 };
+
+#endif // COURSE_H

@@ -11,7 +11,10 @@ O = course.o main.o
 exe: $O
 	$(CCC) $(LDFLAGS) $O -o exe
 
-course.o: course.cpp course.hpp
+main.o: main.cpp 
+	g++ $(CCFLAGS) main.cpp 
+
+course.o: course.cpp
 	g++ $(CCFLAGS) course.cpp
 
 
