@@ -1,0 +1,28 @@
+20150503 ~ 7:30PMish
+
+The very rough “Classes” class is up and working, with limited functionality. 
+When the class is created you will need to use the file name of the txt file you want to implement as a parameter. 
+There's an example of this in the main function in the 'ScheduleSys.cpp' file. 
+This will let us easily import multiple quarter schedules later on.
+
+While its importing all the info fine, the only function you can call right now is printScheduleTerminal(), 
+which prints all the information its imported to the terminal. Go ahead and test it if you want to double-check my work.
+The schedule txt file has changed drastically, and is very specific to this code.
+
+*lexicon note: For the purposes of this project I'm referring to school class types as 'courses' and the individual classes we go to as 'classes'. 
+So “I&C Sci 10” is a course that offers a single class at 12:30PM. Also note that for this database I'm using military time.
+
+I'll need your input on what other functions I should implement in this class, and how soon we need them. 
+So far I'm planning the following:
+   functions that will pass courses and classes offered
+   functions that will pass courses offered within time constraints
+   a function that will take a student object and a course code, then return whether or not that student is eligible to take that class
+   many different printing options, to both terminal and external txt files.
+
+So let me know what you'll need on your end, and what you think this project's structure should look like. 
+Sorry I didn't use any of the files you put up Brent, I'm better with a more basic structure. 
+My code compiles fine with gcc, but let me know if you have any problems. 
+I use the command “g++ ScheduleSys.cpp Classes.cpp” to compile.
+
+I got to go eat.
+-Nick
